@@ -1,0 +1,4 @@
+services:
+#    formulaire.example:
+#        class: JR\FormulaireBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

@@ -1,0 +1,75 @@
+{% extends "::base.html.twig" %}
+
+{% block body %}
+    <div class="container">
+        <div class="col-lg-12">
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <form>
+                                <legend>
+                                    <div class="offset-4">
+                                        <h3>Detail de l'intervention</h3>
+                                    </div>
+                                </legend>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Numéro du devis ou de la facture :</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <label class="col-sm-4 col-form-label">Date du devis ou de la facture :</label>
+                                    <div class="col-sm-8">
+                                        <input type="date" class="form-control">
+                                    </div>
+                                    <label class="col-sm-4 col-form-label">Avance 30% réalisée sur devis :</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>non</option>
+                                            <option>oui</option>
+                                        </select>
+                                    </div>
+                                    <label class="col-sm-4 col-form-label">Organisme demandeur :</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>Autre à préciser au dessous</option>
+                                            <option>Altimmo</option>
+                                            <option>BGB</option>
+                                            <option>Agence Renand</option>
+                                        </select>
+                                    </div>
+                                    <label class="col-sm-4 col-form-label">Nom de l'interlocuteur :</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <label class="col-sm-4 col-form-label">Nom de l'organisme :</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <label class="col-sm-4 col-form-label">Adresse 1 :</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <label class="col-sm-4 col-form-label">Adresse 2 :</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <label class="col-sm-4 col-form-label">Code postal - Ville :</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <legend>
+                                        <div class="offset-4">
+                                            <h3>Prestations</h3>
+                                        </div>
+                                    </legend>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

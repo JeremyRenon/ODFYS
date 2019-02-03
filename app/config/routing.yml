@@ -1,0 +1,7 @@
+formulaire:
+    resource: "@FormulaireBundle/Resources/config/routing.yml"
+    prefix:   /formulaire
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
