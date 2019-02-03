@@ -64,6 +64,15 @@
                                             <h3>Prestations</h3>
                                         </div>
                                     </legend>
+                                    <div class="col-sm-8">
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>Néant ou saut de ligne</option>
+                                            {% for one in prestation %}
+                                                <option>{{ one.libelle }}</option>
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+                                    <label class="col-sm-4 col-form-label" hidden>prix</label>
                                 </div>
                             </form>
                         </div>

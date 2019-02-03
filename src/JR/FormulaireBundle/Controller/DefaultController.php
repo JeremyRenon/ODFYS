@@ -8,6 +8,10 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('FormulaireBundle:Default:index.html.twig');
+        $prestation = $this->getDoctrine()->getManager()
+                    ->getRepository('FormulaireBundle:Prestation')
+                    ->findAll();
+
+        return $this->render('FormulaireBundle:Default:index.html.twig',array('prestation'=>$prestation));
     }
 }
